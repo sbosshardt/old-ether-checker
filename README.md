@@ -16,9 +16,9 @@ You can follow either of these methods to get the container running:
     - [How to Use](#how-to-use)
       - [1. Download the repository](#1-download-the-repository)
       - [2. Change directory to the local repository](#2-change-directory-to-the-local-repository)
-      - [3. Build the Docker image:](#3-build-the-docker-image)
-      - [4. Run the Docker container:](#4-run-the-docker-container)
-      - [5. Access the old website in your web browser.](#5-access-the-old-website-in-your-web-browser)
+      - [3. Build the Docker image](#3-build-the-docker-image)
+      - [4. Run the Docker container](#4-run-the-docker-container)
+      - [5. Access the old website in your web browser](#5-access-the-old-website-in-your-web-browser)
   - [Method 2: Run using Docker Desktop GUI](#method-2-run-using-docker-desktop-gui)
     - [Prerequisites](#prerequisites)
     - [Steps to Host the Tool](#steps-to-host-the-tool)
@@ -37,12 +37,12 @@ Docker is a prerequisite. If you have not done so already, [install Docker](http
 To build and run the Docker container:
 
 #### 1. Download the repository
-Using a command prompt and Git, you can clone this repository.
+Use a command prompt and Git to clone this repository.
 ```
 git clone https://github.com/sbosshardt/old-ether-checker.git
 ```
 
-If you don't have Git installed on your computer (and prefer to not to install it), you can alternatively [download a zip file](https://github.com/sbosshardt/old-ether-checker/archive/refs/heads/master.zip) of this repository, extract it to its own directory.
+If you don't have Git installed on your computer (and prefer not to install it), you can alternatively [download a zip file](https://github.com/sbosshardt/old-ether-checker/archive/refs/heads/master.zip) of this repository, then extract it to its own directory.
 
 ####  2. Change directory to the local repository
 
@@ -51,18 +51,18 @@ After a copy of the repository exists in a local directory, use the command prom
 cd old-ether-checker
 ```
 
-#### 3. Build the Docker image:
+#### 3. Build the Docker image
 Execute the following command to build the container:
 ```
 docker build -t sbosshardt/old-ether-checker .
 ```
 
-#### 4. Run the Docker container:
+#### 4. Run the Docker container
 ```
 docker run -p 3000:3000 sbosshardt/old-ether-checker
 ```
 
-#### 5. Access the old website in your web browser.
+#### 5. Access the old website in your web browser
 Go to: http://localhost:3000/ether and scroll down to the "Did you buy ether during the presale?" section.
 
 
