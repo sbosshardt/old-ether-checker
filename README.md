@@ -4,9 +4,9 @@
 
 This repository hosts a Docker setup to run an old version of the ethereum.org website, specifically for using the presale balance checker tool.
 
-You can follow either of two methods to get the container running:
-1. [**Method 1**](#method-1-build-and-run-using-a-command-line-interface) is intended for tech-savvy users who want to use a command line interface to quickly start the container.
-2. [**Method 2**](#method-2-build-and-run-using-docker-desktop-gui) is intended for less-technical users who want to use a graphical user interface to start the container.
+You can follow either of these methods to get the container running:
+- [**Method 1**](#method-1-build-and-run-using-a-command-line-interface) is intended for tech-savvy users who want to use a command line interface to quickly start the container.
+- [**Method 2**](#method-2-build-and-run-using-docker-desktop-gui) is intended for less-technical users who want to use a graphical user interface to start the container.
 
 ### Table of Contents
 - [Old Ether Checker](#old-ether-checker)
@@ -17,7 +17,7 @@ You can follow either of two methods to get the container running:
       - [1. Build the Docker image:](#1-build-the-docker-image)
       - [2. Run the Docker container:](#2-run-the-docker-container)
       - [3. Access the old website in your web browser.](#3-access-the-old-website-in-your-web-browser)
-  - [Method 2: Build and Run Using Docker Desktop GUI](#method-2-build-and-run-using-docker-desktop-gui)
+  - [Method 2: Build and run using Docker Desktop GUI](#method-2-build-and-run-using-docker-desktop-gui)
     - [Prerequisites](#prerequisites)
     - [Steps to Host the Tool](#steps-to-host-the-tool)
       - [Step 1: Install Docker Desktop](#step-1-install-docker-desktop)
@@ -27,7 +27,7 @@ You can follow either of two methods to get the container running:
     - [Conclusion](#conclusion)
 
 
-## Method 1: Build and run using a command line interface.<a name="method1"></a>
+## Method 1: Build and run using a command line interface.
 
 ### How to Use
 
@@ -35,6 +35,7 @@ Docker is a prerequisite. If you do not have it, install it first.
 To build and run the Docker container:
 
 #### 1. Build the Docker image:
+After downloading a local copy of this repository and changing to its directory, execute the following command to build the container:
 ```
 docker build -t sbosshardt/old-ether-checker .
 ```
@@ -46,14 +47,16 @@ docker run -p 3000:3000 sbosshardt/old-ether-checker
 Go to: http://localhost:3000/ether and scroll down to the
 "Did you buy ether during the presale?" form.
 
-## Method 2: Build and Run Using Docker Desktop GUI<a name="method2"></a>
+## Method 2: Build and run using Docker Desktop GUI
 
-This guide will help you host an old version of the ethereum.org website locally on your computer using the Docker Desktop graphical user interface (GUI). This is particularly useful for checking the presale balance checker tool against genesis addresses without using any command-line commands.
+Users who prefer to not use a command-line terminal can use the Docker Desktop graphical user interface (GUI) to locally host an old version of the ethereum.org website.
+
+Instead of building the container from scratch, your computer will download the [sbosshardt/old-ether-checker](https://hub.docker.com/r/sbosshardt/old-ether-checker) container from Docker Hub.
 
 ### Prerequisites
 
 1. **Download and Install Docker Desktop:**
-   - For Windows and Mac users, download Docker Desktop from [Docker Hub](https://www.docker.com/products/docker-desktop).
+   - For Windows and Mac users, download Docker Desktop from the [Docker website](https://www.docker.com/products/docker-desktop).
    - Follow the installation instructions on the Docker website for your operating system.
 
 ### Steps to Host the Tool
