@@ -14,40 +14,59 @@ You can follow either of these methods to get the container running:
     - [Table of Contents](#table-of-contents)
   - [Method 1: Build and run using a command line interface.](#method-1-build-and-run-using-a-command-line-interface)
     - [How to Use](#how-to-use)
-      - [1. Build the Docker image:](#1-build-the-docker-image)
-      - [2. Run the Docker container:](#2-run-the-docker-container)
-      - [3. Access the old website in your web browser.](#3-access-the-old-website-in-your-web-browser)
-  - [Method 2: Build and run using Docker Desktop GUI](#method-2-build-and-run-using-docker-desktop-gui)
+      - [1. Download the repository](#1-download-the-repository)
+      - [2. Change directory to the local repository](#2-change-directory-to-the-local-repository)
+      - [3. Build the Docker image:](#3-build-the-docker-image)
+      - [4. Run the Docker container:](#4-run-the-docker-container)
+      - [5. Access the old website in your web browser.](#5-access-the-old-website-in-your-web-browser)
+  - [Method 2: Run using Docker Desktop GUI](#method-2-run-using-docker-desktop-gui)
     - [Prerequisites](#prerequisites)
     - [Steps to Host the Tool](#steps-to-host-the-tool)
       - [Step 1: Install Docker Desktop](#step-1-install-docker-desktop)
       - [Step 2: Pull the Docker Image](#step-2-pull-the-docker-image)
       - [Step 3: Run the Docker Container](#step-3-run-the-docker-container)
       - [Step 4: Access the Tool](#step-4-access-the-tool)
-    - [Conclusion](#conclusion)
 
 
 ## Method 1: Build and run using a command line interface.
 
 ### How to Use
 
-Docker is a prerequisite. If you do not have it, install it first.
+Docker is a prerequisite. If you have not done so already, [install Docker](https://docs.docker.com/get-docker/) first.
+
 To build and run the Docker container:
 
-#### 1. Build the Docker image:
-After downloading a local copy of this repository and changing to its directory, execute the following command to build the container:
+#### 1. Download the repository
+Using a command prompt and Git, you can clone this repository.
+```
+git clone https://github.com/sbosshardt/old-ether-checker.git
+```
+
+If you don't have Git installed on your computer (and prefer to not to install it), you can alternatively [download a zip file](https://github.com/sbosshardt/old-ether-checker/archive/refs/heads/master.zip) of this repository, extract it to its own directory.
+
+####  2. Change directory to the local repository
+
+After a copy of the repository exists in a local directory, use the command prompt to change to the directory, e.g.
+```
+cd old-ether-checker
+```
+
+#### 3. Build the Docker image:
+Execute the following command to build the container:
 ```
 docker build -t sbosshardt/old-ether-checker .
 ```
-#### 2. Run the Docker container:
+
+#### 4. Run the Docker container:
 ```
 docker run -p 3000:3000 sbosshardt/old-ether-checker
 ```
-#### 3. Access the old website in your web browser.
-Go to: http://localhost:3000/ether and scroll down to the
-"Did you buy ether during the presale?" form.
 
-## Method 2: Build and run using Docker Desktop GUI
+#### 5. Access the old website in your web browser.
+Go to: http://localhost:3000/ether and scroll down to the "Did you buy ether during the presale?" section.
+
+
+## Method 2: Run using Docker Desktop GUI
 
 Users who prefer to not use a command-line terminal can use the Docker Desktop graphical user interface (GUI) to locally host an old version of the ethereum.org website.
 
@@ -90,8 +109,4 @@ Instead of building the container from scratch, your computer will download the 
   http://localhost:3000/ether
   ```
 
-You should now see the old version of the ethereum.org website, where you can use the presale balance checker tool.
-
-### Conclusion
-
-You have successfully hosted the old Ethereum balance checker on your computer using Docker Desktop's GUI. This setup allows you to verify and reproduce the balances shown by the old tool for genesis addresses without using command-line tools. If you encounter any issues or have questions, feel free to consult the Docker Desktop documentation or reach out for help on relevant forums.
+You should now see the old version of the ethereum.org website. You can find the presale balance checker tool if you scroll down to the "Did you buy ether during the presale?" section.
