@@ -15,12 +15,12 @@ Check your ether presale balance safely here:
 
 Each of the 8,893 genesis wallet addresses is categorized into one of the following tables:
 <!-- no toc -->
-  - [Presale checker significantly greater than Genesis \[top\]](#presale-checker-significantly-greater-than-genesis-top)
-  - [Presale checker significantly less than Genesis \[top\]](#presale-checker-significantly-less-than-genesis-top)
-  - [Original checker +/- 0.1% from Genesis (Rounding errors) \[top\]](#original-checker---01-from-genesis-rounding-errors-top)
-  - [Original checker equal to Genesis \[top\]](#original-checker-equal-to-genesis-top)
+  - [Presale checker significantly greater than Genesis](#presale-checker-significantly-greater-than-genesis-top)
+  - [Presale checker significantly less than Genesis](#presale-checker-significantly-less-than-genesis-top)
+  - [Original checker +/- 0.1% from Genesis (Rounding errors)](#original-checker---01-from-genesis-rounding-errors-top)
+  - [Original checker equal to Genesis](#original-checker-equal-to-genesis-top)
 
-## Presale checker significantly greater than Genesis [[top](#Objective)]
+## Presale checker significantly greater than Genesis [[top](#Genesis-Sale-Balances-Comparison)]
 Four addresses show a significantly higher balance with the original presale checker tool as compared to the actual genesis block.
 
 | Address | Presale Checker ETH | Genesis Block ETH | % Difference |
@@ -31,7 +31,7 @@ Four addresses show a significantly higher balance with the original presale che
 | 22f004df8de9e6ebf523ccace457accb26f97281 | 16,685.39 | 10,000.00 | 66.85% |
 
 
-## Presale checker significantly less than Genesis [[top](#Objective)]
+## Presale checker significantly less than Genesis [[top](#Genesis-Sale-Balances-Comparison)]
 One hundred addresses have a significantly lower balance with the original presale checker tool as compared to the actual genesis block.
 
 | Address | Presale Checker ETH | Genesis Block ETH | % Difference |
@@ -139,7 +139,7 @@ One hundred addresses have a significantly lower balance with the original presa
 | a25b086437fd2192d0a0f64f6ed044f38ef3da32 | 334.27 | 335 | -0.22% |
 
 
-## Original checker +/- 0.1% from Genesis (Rounding errors) [[top](#Objective)]
+## Original checker +/- 0.1% from Genesis (Rounding errors) [[top](#Genesis-Sale-Balances-Comparison)]
 403 presale checker addresses have balances that are different from what the genesis block assigned.
 ```
   399 (presale checker balance is greater than genesis)
@@ -552,5 +552,5 @@ One hundred addresses have a significantly lower balance with the original presa
 | 5102a4a42077e11c58df4773e3ac944623a66d9f | 2,000.32 | 2,000.33 | 
 | b2c53efa33fe4a3a1a80205c73ec3b1dbcad0602 | 1,918.59 | 1,918.60 | 
 
-## Original checker equal to Genesis [[top](#Objective)]
+## Original checker equal to Genesis [[top](#Genesis-Sale-Balances-Comparison)]
 8,385 addresses have a matching balance. In the interest of keeping this file from growing too large, a table of balances is not provided for these addresses.
