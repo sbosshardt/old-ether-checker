@@ -40,29 +40,29 @@ So erstellen und führen Sie den Docker-Container aus:
 
 #### 1. Laden Sie das Repository herunter
 Verwenden Sie eine Eingabeaufforderung und Git, um dieses Repository zu klonen.
-„
-Git-Klon https://github.com/sbosshardt/old-ether-checker.git
-„
+```
+git clone https://github.com/sbosshardt/old-ether-checker.git
+```
 
 Wenn Sie Git nicht auf Ihrem Computer installiert haben (und es lieber nicht installieren möchten), können Sie alternativ [eine ZIP-Datei herunterladen](https://github.com/sbosshardt/old-ether-checker/archive/refs/ (heads/master.zip) dieses Repositorys und extrahieren Sie es dann in sein eigenes Verzeichnis.
 
 #### 2. Wechseln Sie in das lokale Repository
 
 Nachdem eine Kopie des Repositorys in einem lokalen Verzeichnis vorhanden ist, verwenden Sie die Eingabeaufforderung, um in das Verzeichnis zu wechseln, z. B
-„
-CD Old-Ether-Checker
-„
+```
+cd old-ether-checker
+```
 
 #### 3. Erstellen Sie das Docker-Image
 Führen Sie den folgenden Befehl aus, um den Container zu erstellen:
-„
+```
 docker build -t sbosshardt/old-ether-checker .
-„
+```
 
 #### 4. Führen Sie den Docker-Container aus
-„
+```
 docker run -p 3000:3000 sbosshardt/old-ether-checker
-„
+```
 
 #### 5. Greifen Sie in Ihrem Webbrowser auf die alte Website zu
 Gehen Sie zu: http://localhost:3000/ether und scrollen Sie nach unten zu „Haben Sie Ether während des Vorverkaufs gekauft?“ Abschnitt.
@@ -91,24 +91,24 @@ Anstatt den Container von Grund auf neu zu erstellen, lädt Ihr Computer den Con
 
 - Öffnen Sie Docker Desktop.
 - Gehen Sie im linken Menü zum Abschnitt „Bilder“.
-- Geben Sie in der Suchleiste oben auf der Seite „Bilder“ „sbosshardt/old-ether-checker“ ein und drücken Sie die Eingabetaste.
+- Geben Sie in der Suchleiste oben auf der Seite „Bilder“ `sbosshardt/old-ether-checker` ein und drücken Sie die Eingabetaste.
 - Klicken Sie auf die Schaltfläche „Ziehen“ neben dem angezeigten Bildnamen. Docker Desktop lädt das Image vom Docker Hub auf Ihren Computer herunter.
 
 #### Schritt 3: Führen Sie den Docker-Container aus
 
 - Nachdem das Bild abgerufen wurde, gehen Sie im linken Menü auf die Registerkarte „Container/Apps“.
-- Klicken Sie neben dem „old-ether-checker“-Bild auf „Ausführen“.
+- Klicken Sie neben dem `old-ether-checker`-Bild auf „Ausführen“.
 - Möglicherweise wird ein Einstellungsfenster angezeigt. Legen Sie die folgenden Optionen fest:
-  - **LOCALHOST**: Setzen Sie den lokalen Port auf „3000“.
-  - **CONTAINER-PORT**: Stellen Sie sicher, dass der Container-Port auf „3000“ eingestellt ist (dieser sollte automatisch gefüllt werden, wenn Sie den lokalen Port festlegen).
+  - **LOCALHOST**: Setzen Sie den lokalen Port auf `3000`.
+  - **CONTAINER-PORT**: Stellen Sie sicher, dass der Container-Port auf `3000` eingestellt ist (dieser sollte automatisch gefüllt werden, wenn Sie den lokalen Port festlegen).
 - Bestätigen Sie, indem Sie unten im Einstellungsfenster auf die Schaltfläche „Ausführen“ klicken.
 
 #### Schritt 4: Greifen Sie auf das Tool zu
 
 - Öffnen Sie einen beliebigen Webbrowser (z. B. Chrome, Firefox oder Edge).
 - Geben Sie die folgende URL in die Adressleiste ein:
-  „
+  ```
   http://localhost:3000/ether
-  „
+  ```
 
 Sie sollten nun die alte Version der Website ethereum.org sehen. Sie finden das Tool zur Überprüfung des Vorverkaufsguthabens, wenn Sie nach unten zu „Haben Sie während des Vorverkaufs Ether gekauft?“ scrollen. Abschnitt.
